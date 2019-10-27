@@ -15,6 +15,10 @@
 
     <script src="check_password.js"></script>
 
+    <script>
+        re()
+    </script>
+
 </head>
 
 <body>
@@ -24,12 +28,13 @@
     <input class="form-control" type="text" placeholder="Enter your name" name="name" required/>
     <input class="form-control" type="text" placeholder="Enter login" name="login" required/>
     <input class="form-control" type="email" placeholder="Enter email" name="email" required/>
-    <input id="password" class="form-control" type="password" placeholder="Enter password" name="pass" required  onkeyup='check()'/>
-    <input class="form-control" id="confirm_password" type="password" placeholder="Confirm password" name="confirm_pass" required  onkeyup='check()' />
+    <input id="password" class="form-control" type="password" placeholder="Enter password" name="pass" required  onkeyup='check(); ok()'/>
+    <input class="form-control" id="confirm_password" type="password" placeholder="Confirm password" name="confirm_pass" required  onkeyup='check(); ok()'/>
     <span id="correct_message"></span>
+    <span id="sometext"></span>
     <span id="matching_message"></span>
     <div class="formname">
-        <input id="checkbox" type="checkbox" name="checkbox" onchange="document.getElementById('submit').disabled = !this.checked;" />
+        <input id="checkbox" type="checkbox" name="checkbox" onchange="ok3 = this.checked; ok();" />
         <label for="checkbox">Terms & Conditions</label>
         <input class="btn btn-lg btn-primary btn-block" type="submit" disabled="disabled" name="submit" id="submit" value="Sign up" />
     </div>
