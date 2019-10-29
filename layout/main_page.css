@@ -1,0 +1,28 @@
+.btn-group {
+    margin: 0 0 0 auto;
+}
+
+.navbar {
+    height: 50px;
+}
+
+.btn {
+    margin-right: 10px;
+    width: 1px;
+    height: 30px;
+}
+
+.mbtn {
+    margin-right: -200px;
+    width: 30px;
+}
+
+.form-control {
+    margin-right: 200px;
+    height: 30px;
+}
+
+.input-group {
+    margin-right: 10px;
+    width: 400px;
+}
