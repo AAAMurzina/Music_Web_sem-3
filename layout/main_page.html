@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Main page</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
@@ -11,13 +14,24 @@
 </head>
 <body>
 <div class="navbar navbar-dark bg-dark shadow-sm">
-    <div class="btn-group" role="group" arealabel="Baic">
-        <input class="form-control py-2" type="search" placeholder="search" id="example-search-input">
-        <button class="btn btn btn-lg btn-primary btn-sm mbtn" type="button"></button>
-        <button type="button" class="btn btn-lg btn-primary btn-sm" id="sign_in">Sign in</button>
-        <button type="button" class="btn btn-lg btn-primary btn-sm" id="sign_up">Sign up</button>
+    <div class="container">
+        <div class="dropdown open">
+            <button class="btn btn-primary btn-lg dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                <button class="dropdown-item" type="button">User page</button>
+                <button class="dropdown-item" type="button">Open topics</button>
+                <button class="dropdown-item" type="button">To open a topic</button>
+                <button class="dropdown-item" type="button">Favorite Songs</button>
+                <button class="dropdown-item" type="button">Favorite Topics</button>
+            </div>
+        </div>
+        <div  class="row flex-xl-nowrap">
+            <input class="form-control py-2" type="search" placeholder="Search..." id="example-search-input">
+            <button class="mb btn btn-lg btn-primary btn-sm" type="button"></button>
+            <button type="button" class="b btn btn-lg btn-primary btn-sm" id="sign_in">Sign in</button>
+            <button type="button" class="b btn btn-lg btn-primary btn-sm" id="sign_up">Sign up</button>
+        </div>
     </div>
 </div>
 </body>
-
 </html>
