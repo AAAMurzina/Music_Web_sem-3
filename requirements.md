@@ -17,4 +17,16 @@
 1. Возможность удалять темы/комментарии/сообщения пользователей
 2. Возможность добавлять/редактировать/удалять произведения
 
+## Pages
+1. Registration page
+2. Authorisation page
+3. User profile page
+4. Main page (List of songs and menu)
+5. Song page
+6. Favorite songs for user page
+7. Forum main page (List of all open topics)
+8. Topic page (Page with answers and comments for one theme)
+9. Favorite topics (from forum) for user
+10. Description page (about functional our site and about us) 
+
 ## Created by Murzina Alena (back) and Mihaylova Yuliya (front) (^ ω ^)
