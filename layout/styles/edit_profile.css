@@ -1,0 +1,24 @@
+.required {
+    color: #ff191a;
+}
+
+textarea {
+    background: transparent;
+    height: 35px;
+    font-size: medium;
+}
+
+.save_button {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 20%;
+}
+
+.date {
+    background: transparent;
+    width: 43%;
+}
+
+.main_page {
+    margin-left: -1400px;
+}
