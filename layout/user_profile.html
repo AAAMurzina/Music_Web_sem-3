@@ -14,25 +14,27 @@
         <link href="styles/user_profile.css" rel="stylesheet">
 </head>
 <body>
-<div class="navbar navbar-dark bg-dark">
-    <div class="container">
-        <div class="dropdown open">
-            <button class="btn btn-primary btn-lg dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu">
-                <button class="dropdown-item" type="button" id="user_page">Edit profile</button>
-                <button class="dropdown-item" type="button" id="open_topics">Open topics</button>
-                <button class="dropdown-item" type="button" id="to_open_topocs">To open a topic</button>
-                <button class="dropdown-item" type="button" id="favorite_songs">Favorite Songs</button>
-                <button class="dropdown-item" type="button" id="favorite_topics">Favorite Topics</button>
+<header>
+    <div class="navbar navbar-dark bg-dark shadow_sm">
+        <div class="container">
+            <div class="dropdown open">
+                <button class="btn btn-primary btn-lg dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                    <button class="dropdown-item" type="button" id="user_page">Edit profile</button>
+                    <button class="dropdown-item" type="button" id="open_topics">Open topics</button>
+                    <button class="dropdown-item" type="button" id="to_open_topocs">To open a topic</button>
+                    <button class="dropdown-item" type="button" id="favorite_songs">Favorite Songs</button>
+                    <button class="dropdown-item" type="button" id="favorite_topics">Favorite Topics</button>
+                </div>
+            </div>
+            <div  class="fr row flex-xl-nowrap">
+                <button type="button" class="b btn btn-lg btn-primary btn-sm" id="sign_in">Sign out</button>
             </div>
         </div>
-        <div  class="fr row flex-xl-nowrap">
-            <button type="button" class="b btn btn-lg btn-primary btn-sm" id="sign_in">Sign out</button>
-        </div>
     </div>
-</div>
+</header>
 <div class="row">
-    <p class="profile_name">Your profile</p>
+    <p class="profile_name">Profile</p>
 </div>
 <div class="row">
     <div class="col-sm">
