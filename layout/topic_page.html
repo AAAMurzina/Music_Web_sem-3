@@ -28,13 +28,18 @@
         </div>
     </div>
 </div>
-<br><br>
-
+<br>
+<div class="row">
+    <div class="col-sm col-sm-push-5">
+        <h1>&{theme_id}</h1>
+    </div>
+    <div class="col"></div>
+</div>
+<br>
 <div class="main_row row">
     <div class="main_panel panel panel-primary">
         <div class="panel-heading">
-            <a class="panel-title" href="" id="user">&{user_id} - </a>
-            <a class="panel-title" href="" id="theme">&{theme_id}</a>
+            <a class="panel-title" href="" id="user">&{user_id}</a>
         </div>
         <div class="panel-body">
             ${description_id}
@@ -89,7 +94,10 @@
     </div>
     <div class="main_panel panel panel-primary">
         <div class="panel-heading">
-            <a class="panel-title" href="" id="comment_user">&{user_id} </a>
+            <a class="panel-title" href="" id="comment_user_1">&{user_id} </a>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
         </div>
         <div id="a1" class="panel-body">
             ${comment_id}
@@ -97,7 +105,10 @@
     </div>
     <div class="main_panel panel panel-primary">
         <div class="panel-heading">
-            <a class="panel-title" href="" id="comment_user">&{user_id} </a>
+            <a class="panel-title" href="" id="comment_user_2">&{user_id} </a>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
         </div>
         <div id="a2" class="panel-body">
             ${comment_id}
