@@ -52,7 +52,9 @@
             <textarea class="u border-top border-bottom" id="email">${email}</textarea>
         </div>
         <div>
-            <button class="choose_file">Choose file</button>
+            <form enctype="multipart/form-data" method="post">
+                <p><input type="file" name="f">
+            </form>
         </div>
         <div>
             <label>Town:</label><br>
@@ -81,8 +83,13 @@
             <label>Favorite music group or/and artist:</label><br>
             <textarea class="u border-top border-bottom" id="favorite_artist">${favorite_artist}</textarea>
         </div>
-        <div>
-            <button class="save_button btn btn-lg btn-dark btn-block" type="submit" id="save">Save</button>
+        <div class="row">
+            <div class="col">
+
+            </div>
+            <div class="col">
+                <input type="submit" class="save_button btn btn-lg btn-dark btn-block" id="save" value="Save">
+            </div>
         </div>
     </div>
     <div class="col-sm">

@@ -23,7 +23,8 @@
 <form class="form-signup" action="registration" method="post">
     <input class="form-control" type="text" placeholder="Enter your name" name="name" required/>
     <input class="form-control" type="text" placeholder="Enter login" name="login" required/>
-    <input class="form-control" type="email" placeholder="Enter email" name="email" required/>
+    <input class="form-control" type="email" placeholder="Enter email" name="email" required onkeyup='check_email(); ok()'/>
+    <span id="correct_email"></span>
     <input id="password" class="form-control" type="password" placeholder="Enter password" name="pass" required  onkeyup='check(); ok()'/>
     <input class="form-control" id="confirm_password" type="password" placeholder="Confirm password" name="confirm_pass" required  onkeyup='check(); ok()'/>
     <span id="correct_message"></span>

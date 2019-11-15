@@ -10,6 +10,7 @@
 
     <!-- Custom styles for this template -->
     <link href="styles/song_page.css" rel="stylesheet">
+    <script src="scripts/song_page.js"></script>
 
     <title>Song page</title>
 </head>
@@ -121,12 +122,13 @@
             </div>
             <div class="modal-body">
                 <form>
-                    <input type="text" id="comment" class="intput-comment">
+                    <input type="text" id="comment" class="intput-comment" onkeyup='check_email(); ok()'>
+                    <span id="too_much_symbols"></span>
                 </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Leave comment</button>
+                <button type="button" class="btn btn-primary" id="submit">Leave comment</button>
             </div>
         </div>
     </div>

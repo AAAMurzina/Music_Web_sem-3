@@ -1,6 +1,7 @@
 var ok1 = false;
 var ok2 = false;
 var ok3 = false;
+var ok4 = false;
 
 var check = function() {
     var pass = document.getElementById('password').value;
@@ -27,11 +28,30 @@ var check = function() {
     }
 };
 
+var check_email = function () {
+    console.log(correct_email("yulu.2000@hotmail.com"));
+    if(correct_email(document.getElementById('email'))) {
+        document.getElementById('correct_email').innerHTML = '';
+        ok4 = true;
+    }
+    else {
+
+        document.getElementById('correct_email').style.color = 'red';
+        document.getElementById('correct_email').innerHTML = 'Incorrect email';
+        ok4 = false;
+    }
+};
+
 var re = function (s) {
     var reg = /[1-9][A-z]|[A-z][1-9]/;
     return reg.test(s)
 };
 
+var correct_email = function (s) {
+    var reg = /^[0-9a-z-\.]+\@[0-9a-z-]{2,}\.[a-z]{2,}$/i;
+    return reg.test(s);
+};
+
 var ok = function () {
-    document.getElementById('submit').disabled = !(ok1 && ok2 && ok3);
+    document.getElementById('submit').disabled = !(ok1 && ok2 && ok3 && ok4);
 };
