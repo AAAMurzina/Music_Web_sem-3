@@ -10,20 +10,18 @@
 
     <!-- Custom styles for this template -->
     <link href="styles/topic_page.css" rel="stylesheet">
+    <link href="styles/toggle_heart.css" rel="stylesheet">
 
     <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
     <title>Topic page</title>
 </head>
 <body>
 <div class="navbar navbar-dark bg-dark shadow-sm">
     <div class="container">
         <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col-sm col-sm-push-2">
+        <div class="col-sm col-sm-push-6">
             <button class="main_btn btn btn-lg btn-primary" id="main_page" href="">Main page</button>
         </div>
     </div>
@@ -42,7 +40,18 @@
             <a class="panel-title" href="" id="user">&{user_id}</a>
         </div>
         <div class="panel-body">
-            ${description_id}
+            <div class="row">
+                ${description_id}
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-lg col-lg-push-5">
+                    <div class="row">
+                        <input id="toggle-heart" type="checkbox"/>
+                        <label for="toggle-heart" aria-label="like">❤</label>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

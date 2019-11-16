@@ -15,7 +15,7 @@
 
 ### Функционал доступный для админа:
 1. Возможность удалять темы/комментарии/сообщения пользователей
-2. Возможность добавлять/редактировать/удалять произведения
+2. Возможность добавлять/удалять произведения
 
 ## Pages
 1. Registration page
@@ -27,6 +27,7 @@
 7. Forum main page (List of all open topics)
 8. Topic page (Page with answers and comments for one theme)
 9. Favorite topics (from forum) for user
-10. Description page (about functional our site and about us) 
+10. Add song (for admin)
+11. Edit profile page
 
 ## Created by Murzina Alena (back) and Mihaylova Yuliya (front) (^ ω ^)

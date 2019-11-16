@@ -29,13 +29,12 @@ var check = function() {
 };
 
 var check_email = function () {
-    console.log(correct_email("yulu.2000@hotmail.com"));
-    if(correct_email(document.getElementById('email'))) {
+    var email = document.getElementById('email').value;
+    if(correct_email(email)) {
         document.getElementById('correct_email').innerHTML = '';
         ok4 = true;
     }
     else {
-
         document.getElementById('correct_email').style.color = 'red';
         document.getElementById('correct_email').innerHTML = 'Incorrect email';
         ok4 = false;

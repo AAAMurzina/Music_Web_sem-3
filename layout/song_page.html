@@ -10,7 +10,9 @@
 
     <!-- Custom styles for this template -->
     <link href="styles/song_page.css" rel="stylesheet">
-    <script src="scripts/song_page.js"></script>
+    <link href="styles/toggle_heart.css" rel="stylesheet">
+
+    <script src="scripts/too_much_symbols.js"></script>
 
     <title>Song page</title>
 </head>
@@ -21,19 +23,17 @@
             <div class="col-sm col-sm-pull-2">
                 <button class="link-btn btn-primary" id="back">Back</button>
             </div>
-            <div class="col">
-
+            <div class="col-sm col-sm-pull-4">
+                <!-- Должна быть видна ток админу -->
+                <button class="link-btn btn-primary" id="delete"
+                        disabled="disabled" style="display: none">Delete this song</button>
             </div>
-            <div class="col">
-
+            <div class="col-sm col-sm-pull-5">
+                <!-- Должна быть видна ток админу -->
+                <button class="link-btn btn-primary" id="edit"
+                        disabled="disabled" style="display: none">Edit </button>
             </div>
-            <div class="col">
-
-            </div>
-            <div class="col">
-
-            </div>
-            <div class="col-sm col-sm-push-3">
+            <div class="col-sm col-sm-push-4">
                 <button class="link-btn btn-primary" id="main_page">Main page</button>
             </div>
         </div>
@@ -43,9 +43,7 @@
     <p class="title" id="title">${Title} - ${author}</p>
 </div>
 <div class="row">
-    <div class="col">
-
-    </div>
+    <div class="col"></div>
     <div class="col">
         <div class="cover">
             <img class="cover-img img-thumbnail" src="pictures/imd.jpg" alt="Song cover">
@@ -72,6 +70,9 @@
         <div class="row">
             <div class="panel panel-primary">
                 <div class="panel-heading">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                     <h3 class="panel-title">${user_id}</h3>
                 </div>
                 <div class="panel-body">
@@ -82,6 +83,9 @@
         <div class="row">
             <div class="panel panel-primary">
                 <div class="panel-heading">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                     <h3 class="panel-title">${user_id}</h3>
                 </div>
                 <div class="panel-body">
@@ -92,6 +96,9 @@
         <div class="row">
             <div class="panel panel-primary">
                 <div class="panel-heading">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                     <h3 class="panel-title">${user_id}</h3>
                 </div>
                 <div class="panel-body">
@@ -115,14 +122,15 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Leave your comment</h5>
+                <h3 class="modal-title" id="exampleModalLabel">Leave your comment</h3>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 <form>
-                    <input type="text" id="comment" class="intput-comment" onkeyup='check_email(); ok()'>
+                    <input type="text" readonly="" id="comment" style="font-size: large"
+                           class="intput-comment" onkeydown='f(); check()'>
                     <span id="too_much_symbols"></span>
                 </form>
             </div>

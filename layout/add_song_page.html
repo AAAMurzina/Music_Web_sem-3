@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="styles/add_song.css">
+
+    <title>Add song</title>
+
+</head>
+
+<header>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <div class="col-sm col-sm-pull-2">
+                <button class="main_btn btn btn-lg btn-primary" id="back" href="">Back</button>
+            </div>
+
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+
+            <div class="col-sm col-sm-push-3">
+                <button class="main_btn btn btn-lg btn-primary" id="main_page" href="">Main page</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+
+<br><br>
+<div class="row">
+    <div class="col-sm col-sm-push-5">
+        <h1>Add a song</h1>
+    </div>
+    <div class="col"></div>
+</div>
+<br><br>
+<div class="row">
+    <div class="col-sm col-sm-push-2">
+        <div class="card">
+            <img class="ava img-thumbnail" src="pictures/cover.jpg" align="left" alt="Set photo">
+        </div>
+    </div>
+    <div class="col">
+        <div class="row">
+            <label>
+                Add author:
+                <textarea id="author"></textarea>
+            </label>
+        </div>
+        <div class="row">
+            <label>
+                Add title:&nbsp&nbsp&nbsp&nbsp
+                <textarea id="title"></textarea>
+            </label>
+        </div>
+        <div class="row">
+            <label>
+                Add genre:
+                <textarea id="genre"></textarea>
+            </label>
+        </div>
+    </div>
+    <div class="col-sm col-sm-pull-1">
+        <label>
+            Add text:
+            <textarea class="text"></textarea>
+        </label>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm col-sm-push-2">
+        <h3>Add a cover: </h3>
+        <form enctype="multipart/form-data" method="post">
+            <p><input type="file" name="f">
+        </form>
+    </div>
+    <div class="col"></div>
+</div>
+<br>
+<div class="row">
+    <div class="col"></div>
+    <div class="col-sm col-sm-push-1">
+        <form method="post">
+            <input type="submit" class="add_btn btn btn-lg btn-dark" value="Add a song">
+        </form>
+    </div>
+    <div class="col"></div>
+</div>
+
+</body>
+</html>
