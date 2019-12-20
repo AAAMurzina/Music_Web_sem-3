@@ -1,0 +1,23 @@
+.panel {
+    width: 100%;
+}
+
+.title {
+    margin: auto;
+    margin-bottom: 35px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.btn {
+    width: 60%;
+    height: 70%;
+}
+
+.main_panel {
+    width: 100%;
+}
+
+.main_btn {
+    width: 20%;
+}
